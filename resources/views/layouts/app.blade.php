@@ -17,7 +17,21 @@
 
 <body>
 
-    <header>HEADER</header>
+    <header>
+        <section class="container d-flex justify-content-between align-items-center">
+            <img src="{{Vite::asset ('resources/img/dc-logo.png')}}" alt="logo">
+            <nav>
+                <ul class="list-unstyled d-flex gap-2">
+                    @foreach ($linkheader as $link)
+                        <li>{{ $link }}</li>
+                    @endforeach
+                </ul>
+            </nav>
+    </section>
+
+       
+
+    </header>
 
 
     <main>

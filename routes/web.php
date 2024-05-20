@@ -12,11 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     $comicsArray = config('comics');
+    $linkHeaderArray = config('linkheader');
+   
     $data = [
-        'comics' => $comicsArray
+        'comics' => $comicsArray,
+        'linkheader' =>  $linkHeaderArray
     ];
+
+   
+    
     return view('home', $data);
 });
