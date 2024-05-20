@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comicsArray = config('comics');
     $linkHeaderArray = config('linkheader');
+    $linkShopArray = config('linkshop');
    
     $data = [
         'comics' => $comicsArray,
-        'linkheader' =>  $linkHeaderArray
+        'linkheader' =>  $linkHeaderArray,
+        'linkshop' =>  $linkShopArray
     ];
 
-   
-    
     return view('home', $data);
 });
