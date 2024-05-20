@@ -25,6 +25,5 @@ return [
         "image" => "./resources/img/buy-dc-power-visa.svg",
     ],
 
-
 ];
 

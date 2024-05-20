@@ -28,15 +28,16 @@
                 </ul>
             </nav>
     </section>
-
-       
     </header>
 
     <main>
       @yield('content')
     </main>
 
-    <footer>FOOTER</footer>
+    <footer>
+        @include('partials.footer')
+    </footer>
+
 
 </body>
 
